@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@3
+        uses: actions/checkout@v3
       - name: Deploy
         run: vercel -t ${{ secrets.VERCEL_TOKEN }}
